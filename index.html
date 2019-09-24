@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Lab2</title>
+  <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header id="mainmenu">
+  <a style="margin-left: 200px;" href="#"><img src="img/1537472003_777777777777777777777777.jpg"  height="75" width="75"/></a>
+  <ul>
+    <li><a href="#">Main</a></li>
+    <li ><a href="#" >News</a></li>
+    <li><a href="#">For Fans</a>
+      <ul>
+        <li><a href="#">Fan club</a></li>
+        <li><a href="#">Tour schedule</a></li>
+        <li><a href="#">Lyrics</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Fans appeal</a></li>
+    <li><a href="#">Concert venue</a></li>
+    <li><a href="#">Admin</a>
+      <ul class="last">
+      </ul>
+    </li>
+  </ul>
+</header>
+
+<img class="img" src="img/show_foto.jpg"/>
+<h2 style="color: white; text-align: center; max-width: 800px; margin:auto;margin-top: 30px">Velial Squad — российская хорроркор-группа, главной чертой имиджа которой являются балаклавы, без которых они не появляются перед своими поклонниками.
+  Имена участников не называются, поэтому их называют просто «чёрный» и «белый», в цвет масок</h2>
+
+<img style="display: block; margin-left: auto;margin-right: auto; margin-top: 100px" src="img/images.png" height="225" width="225"/>
+<div style="text-align: center; color:white; margin-top: 100px">
+  <h1>Velial Squad</h1>
+  <br>
+  <h1>"Голову на плаху"</h1>
+  <h2>2019</h2>
+  <br>
+  <div style="max-width: 600px; margin: auto; font-size: 16px; font-family: 'Ravi Prakash'">
+    <h3><pre style="float: left">
+1.Топлю (Drown)
+
+2.Кара (Punishment)
+
+3.Насекомое (Insect)
+
+4.Swipe
+
+5.Мимо худа (Past the hood)
+
+6.Moonrock
+
+7.Флешбэк (Flashback)
+
+8.Притон (Bando)
+
+</pre>
+  <pre style="float:right">
+9.Гипноз (Hypnosis)
+
+10.Black God
+
+11.Rest In Peace
+
+12.Voodoo Doll
+
+13.Punk Is Dead
+
+14.Ловец снов (Dream hunters)
+
+15.Голову На Плаху
+
+16.Приговор (Outro)</pre></h3></div>
+
+</div>
+
+<footer style="color: white;margin-top: 450px; border-top: 1px solid white; flex-direction: row;display: flex">
+  <h3><pre>
+    © VELIALSQUAD, 2019.
+    Все права защищены.</pre></h3>
+  <div style="text-align: center; margin-left: 500px;">
+  <h3><a href="#">Пользовательское соглашение</a></h3>
+    <h3><a href="#">Политика обработки персональных данных</a></h3>
+  </div>
+</footer>
+</body>
+</html>
+<style>
+  .img{
+    width: 100%;
+  }
+  body{
+    margin: 0;
+    background-color: black;
+  }
+  #mainmenu {
+    position: fixed;
+    height: 75px;
+    padding: 0;
+    float: left;
+    width: 100%;
+    z-index: 10;
+    margin:0;
+    background-color: black;
+
+  }
+  #mainmenu ul {
+    position: relative;
+    right: 50%;
+    height: 75px;
+    float: right;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  #mainmenu > ul > li {
+    position: relative;
+    left: 50%;
+    float: left;
+    height: 75px;
+    padding: 0;
+    margin: 0;
+  }
+  #mainmenu > ul > li > a {
+    border-left: 1px solid #666;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 60px;
+    line-height: 75px;
+  }
+
+  #mainmenu > ul > li:hover > a{
+    color: #fff
+  }
+  #mainmenu > ul > li:hover {
+    background: #666
+  }
+
+  /* Выпадающие подпункты */
+  #mainmenu ul li ul {
+    position: absolute;
+    left: 0;
+    top: 75px;
+    display: none;
+    list-style: none;
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+    width: 200px
+  }
+  #mainmenu > ul > li ul li {
+    background-color: #666;
+    position: relative;
+    left: 0;
+    display: list-item;
+    float: none;
+    height: auto;
+    margin: 0;
+    text-align: left;
+  }
+  #mainmenu ul li ul li a {
+    border-bottom: 1px solid #999;
+    display: block;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+  #mainmenu ul li ul li.parent a {
+    position: relative;
+  }
+
+  #mainmenu ul li ul li:hover, #mainmenu ul li ul li.hover {
+    background-color: #444;
+  }
+  #mainmenu ul li:hover ul, #mainmenu ul li.hover ul {
+    display: block;
+  }
+
+  #mainmenu ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+  }
+  #mainmenu ul li ul li ul {
+    top: 0;
+    left: 200px;
+    margin: 0 0 0 20px;
+    width: 180px
+  }
+</style>
