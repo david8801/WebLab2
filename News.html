@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lab2</title>
+    <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header style="top: 0px;animation: animateForwards 500ms linear" id="mainmenu">
+    <a style="margin-left: 200px;" href="#"><img src="img/1537472003_777777777777777777777777.jpg"  height="75" width="75"/></a>
+    <ul>
+        <li><a href="index.html">Main</a></li>
+        <li ><a href="#" >News</a></li>
+        <li><a href="#">For Fans</a>
+            <ul>
+                <li><a href="#">Fan club</a></li>
+                <li><a href="#">Tour schedule</a></li>
+                <li><a href="#">Lyrics</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Fans appeal</a></li>
+        <li><a href="#">Concert venue</a></li>
+        <li><a href="#">Admin</a>
+            <ul class="last">
+            </ul>
+        </li>
+    </ul>
+</header>
+
+<img style="position: absolute;z-index: 0; opacity: 0.5" src="img/long-bg.jpg" width="100%"/>
+<img src="img/noise.gif" style="opacity: 0.06; position: absolute"  height="100%" width="100%"/>
+<div style=" margin-top: 90px;font-size:140px;font-family: 'Ravi Prakash'; animation: letters 1s forwards; z-index: 3; position: relative" >NEWS</div>
+<div class="main">
+    <div class="sub">
+        <div class="bord">
+            <iframe  width="300" height="150" src="https://www.youtube.com/embed/-RCBp8a3WY4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="news">VELIAL SQUAD - Swipe</p>
+            <p>Опубликовано: 18 сент. 2019 г.</p>
+            <p>Клип на трек из последнего альбома "Голову на плаху"</p>
+        </div>
+        <div class="bord">
+            <iframe width="300" height="150" src="https://www.youtube.com/embed/9LmI6n1s5NI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="news">VELIAL SQUAD - КРУГ</p>
+            <p>Опубликовано: 26 янв. 2019 г.</p>
+            <p>Клип на одиночный трек "КРУГ"</p>
+        </div>
+        <div class="bord">
+            <iframe width="300" height="150" src="https://www.youtube.com/embed/Tca6JCTAlww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="news">VELIAL SQUAD - ДРОБОВИК</p>
+            <p>Опубликовано: 19 окт. 2018 г.</p>
+            <p>Клип на трек из альбома "VS4DEATH"</p>
+        </div>
+    </div>
+    <div class="sub">
+        <div class="bord">
+            <iframe width="300" height="150" src="https://www.youtube.com/embed/MIMfjc-G9-U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="news">VELIAL SQUAD - STILL DEAD</p>
+            <p>Опубликовано: 3 апр. 2018 г.</p>
+            <p>Клип на трек из альбома "STILL DEAD"</p>
+        </div>
+        <div class="bord">
+            <iframe width="300" height="150" src="https://www.youtube.com/embed/c8NYOVATg5U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="news">VELIAL SQUAD – WHITE TRASH</p>
+            <p>Опубликовано: 21 нояб. 2017 г.</p>
+            <p>Клип на одиночный трек "WHITE TRASH"</p>
+        </div>
+        <div class="bord">
+
+
+            <iframe width="300" height="150" src="https://www.youtube.com/embed/yhBInYdghBc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="news">VELIAL SQUAD - PULSAR</p>
+            <p>Опубликован: 9 дек. 2016 г.</p>
+            <p>Клип на одиночный трек "PULSAR"</p>
+        </div>
+    </div>
+</div>
+
+<footer style="color: white;margin-top: 100px; border-top: 1px solid white; flex-direction: row;display: flex;">
+
+    <img  style="position: absolute; z-index: 0;" src="img/visuals-000074172790-cUYrQb-original.jpg" width="99%"/>
+    <h3 style="margin-top: 50px" ><pre>
+    © VELIALSQUAD, 2019.
+    Все права защищены.</pre></h3>
+    <div style="text-align: center; margin-left: 450px; z-index: 3; margin-top: 30px;">
+        <h3 ><a  href="#">Пользовательское соглашение</a></h3>
+        <h3><a href="#">Политика обработки персональных данных</a></h3>
+    </div>
+</footer>
+</body>
+</html>
+<style>
+    a { color: inherit; }
+    h3{
+        z-index: 3;
+    }
+    .news{
+        border: 1px white solid;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        color: white;
+        max-width: 1100px;
+
+    }
+    .sub{
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+    }
+    .bord{
+        border: 1px solid white;
+        width:300px;
+        position: relative;
+        margin-left: 50px;
+        border-radius: 4px;
+        background-color: black;
+    }
+    body{
+        background-color: black;
+    }
+    @keyframes letters {
+        from { left: 0px; }
+        to { margin-left: 770px }
+    }
+    @keyframes animateForwards {
+        from { top: -90px; }
+        to { top: 0px; }
+    }
+    #mainmenu {
+        position: fixed;
+        height: 75px;
+        padding: 0;
+        float: left;
+        width: 100%;
+        z-index: 10;
+        margin:0;
+        background-color: black;
+        opacity: 0.855;
+    }
+    #mainmenu ul {
+        position: relative;
+        right: 50%;
+        height: 75px;
+        float: right;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+    }
+    #mainmenu > ul > li {
+        position: relative;
+        left: 50%;
+        float: left;
+        height: 75px;
+        padding: 0;
+        margin: 0;
+    }
+    #mainmenu > ul > li > a {
+        border-left: 1px solid #666;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 0 60px;
+        line-height: 75px;
+    }
+    @keyframes hov {
+        from{ background-color: black}
+        to{ background-color: #666}
+
+    }
+    #mainmenu > ul > li:hover > a{
+        color: #fff
+    }
+    #mainmenu > ul > li:hover {
+        animation: hov 0.5s linear forwards;
+    }
+
+    /* Выпадающие подпункты */
+    #mainmenu ul li ul {
+        position: absolute;
+        left: 0;
+        top: 75px;
+        display: none;
+        list-style: none;
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+        width: 200px
+    }
+    #mainmenu > ul > li ul li {
+        background-color: #666;
+        position: relative;
+        left: 0;
+        display: list-item;
+        float: none;
+        height: auto;
+        margin: 0;
+    }
+    #mainmenu ul li ul li a {
+        border-bottom: 1px solid #999;
+        display: block;
+        color: #fff;
+        padding: 10px 15px;
+        text-decoration: none;
+    }
+    #mainmenu ul li ul li.parent a {
+        position: relative;
+    }
+
+    #mainmenu ul li ul li:hover, #mainmenu ul li ul li.hover {
+        background-color: #444;
+    }
+    #mainmenu ul li:hover ul, #mainmenu ul li.hover ul {
+        display: block;
+    }
+
+    #mainmenu ul li:hover > ul {
+        opacity: 1;
+        visibility: visible;
+        margin: 0;
+    }
+    #mainmenu ul li ul li ul {
+        top: 0;
+        left: 200px;
+        margin: 0 0 0 20px;
+        width: 180px
+    }
+    li{
+        font-family: 'Ravi Prakash',serif;
+        font-size: 20px ;
+        opacity: 1;
+        color:purple;
+    }
+    div p{
+        text-align: center;
+    }
+body{
+    color: white;
+}
+</style>

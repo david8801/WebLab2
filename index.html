@@ -7,11 +7,11 @@
 </head>
 
 <body>
-<header id="mainmenu">
+<header style="top: 0px;animation: animateForwards 500ms linear" id="mainmenu">
   <a style="margin-left: 200px;" href="#"><img src="img/1537472003_777777777777777777777777.jpg"  height="75" width="75"/></a>
   <ul>
     <li><a href="#">Main</a></li>
-    <li ><a href="#" >News</a></li>
+    <li ><a href="News.html" >News</a></li>
     <li><a href="#">For Fans</a>
       <ul>
         <li><a href="#">Fan club</a></li>
@@ -29,13 +29,15 @@
 </header>
 
 <img class="img" src="img/show_foto.jpg"/>
-<h2 style="color: white; text-align: center; max-width: 800px; margin:auto;margin-top: 30px">Velial Squad — российская хорроркор-группа, главной чертой имиджа которой являются балаклавы, без которых они не появляются перед своими поклонниками.
+
+<img style=" position: absolute; left: 0px;top: 600px;" src="img/580b585b2edbce24c47b2658.png" height="1225" width="711"/>
+<img style=" position: absolute; right: 0px;top: 600px;" src="img/zes.png" height="1225" width="711"/>
+<h2 style="color: white; text-align: center; max-width: 800px; margin:auto;margin-top: 30px;font-family: 'Ravi Prakash'">Velial Squad — российская хорроркор-группа, главной чертой имиджа которой являются балаклавы, без которых они не появляются перед своими поклонниками.
   Имена участников не называются, поэтому их называют просто «чёрный» и «белый», в цвет масок</h2>
 
 <img style="display: block; margin-left: auto;margin-right: auto; margin-top: 100px" src="img/images.png" height="225" width="225"/>
-<div style="text-align: center; color:white; margin-top: 100px">
+<div style="text-align: center; color:white; margin-top: 50px">
   <h1>Velial Squad</h1>
-  <br>
   <h1>"Голову на плаху"</h1>
   <h2>2019</h2>
   <br>
@@ -77,24 +79,40 @@
 
 </div>
 
-<footer style="color: white;margin-top: 450px; border-top: 1px solid white; flex-direction: row;display: flex">
-  <h3><pre>
+
+<footer class="foot" style="color: white;margin-top: 450px; border-top: 1px solid white; flex-direction: row;display: flex;">
+
+  <img style="position: absolute;" src="img/visuals-000074172790-cUYrQb-original.jpg" width="99%"/>
+  <h3 style="margin-top: 50px" ><pre>
     © VELIALSQUAD, 2019.
     Все права защищены.</pre></h3>
-  <div style="text-align: center; margin-left: 500px;">
-  <h3><a href="#">Пользовательское соглашение</a></h3>
+  <div style="text-align: center; margin-left: 450px; z-index: 3; margin-top: 30px;">
+  <h3 ><a  href="#">Пользовательское соглашение</a></h3>
     <h3><a href="#">Политика обработки персональных данных</a></h3>
   </div>
 </footer>
 </body>
 </html>
 <style>
+    @keyframes hov {
+        from{ background-color: black}
+        to{ background-color: #666}
+
+    }
+  a { color: inherit; }
+  h3{
+    z-index: 3;
+  }
   .img{
     width: 100%;
   }
   body{
-    margin: 0;
     background-color: black;
+  }
+
+  @keyframes animateForwards {
+    from { top: -90px; }
+    to { top: 0px; }
   }
   #mainmenu {
     position: fixed;
@@ -105,7 +123,7 @@
     z-index: 10;
     margin:0;
     background-color: black;
-
+  opacity: 0.855;
   }
   #mainmenu ul {
     position: relative;
@@ -116,6 +134,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
+
   }
   #mainmenu > ul > li {
     position: relative;
@@ -129,7 +148,7 @@
     border-left: 1px solid #666;
     display: block;
     color: #fff;
-    text-decoration: none;
+      text-decoration: none;
     padding: 0 60px;
     line-height: 75px;
   }
@@ -138,7 +157,7 @@
     color: #fff
   }
   #mainmenu > ul > li:hover {
-    background: #666
+      animation: hov 0.5s linear forwards;
   }
 
   /* Выпадающие подпункты */
@@ -161,7 +180,6 @@
     float: none;
     height: auto;
     margin: 0;
-    text-align: left;
   }
   #mainmenu ul li ul li a {
     border-bottom: 1px solid #999;
@@ -191,5 +209,11 @@
     left: 200px;
     margin: 0 0 0 20px;
     width: 180px
+  }
+  li{
+    font-family: 'Ravi Prakash',serif;
+    font-size: 20px ;
+    opacity: 1;
+    color:purple;
   }
 </style>
